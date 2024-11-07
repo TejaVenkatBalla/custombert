@@ -1,4 +1,9 @@
 pandas
+numpy
 torch
 imblearn
+nltk
+spacy
+transformers
+sklearn
 nltk

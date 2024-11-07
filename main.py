@@ -1,13 +1,13 @@
 import logging
 import sys
-from classifier import CybercrimeClassifier
+from classifier import NeuraGuard
 
 def main():
     """Main function to run the Cybercrime Classifier."""
     logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
     try:
-        classifier = CybercrimeClassifier.load_model("multioutput_bert_model.joblib")
+        classifier = NeuraGuard.load_model("multioutput_bert_model.joblib")
     except Exception as e:
         print(f"Error loading model: {e}")
         sys.exit(1)
@@ -33,7 +33,7 @@ def main():
         except Exception as e:
             print(f"Prediction error: {e}")
 
-    print("\nThank you for using the Cybercrime Classifier!")
+    print("\nThank you for using the NeuraGuard!")
 
 if __name__ == "__main__":
     main()

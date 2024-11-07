@@ -20,7 +20,7 @@ class MultiOutputBERT(nn.Module):
         return category_logits, subcategory_logits
 
 
-class CybercrimeClassifier:
+class NeuraGuard:
     def __init__(self, model_path):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model_data = joblib.load(model_path)
@@ -69,4 +69,4 @@ class CybercrimeClassifier:
 
     @staticmethod
     def load_model(model_path):
-        return CybercrimeClassifier(model_path)
+        return NeuraGuard(model_path)

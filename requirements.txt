@@ -5,5 +5,5 @@ imblearn
 nltk
 spacy
 transformers
-sklearn
+scikit-learn
 nltk
